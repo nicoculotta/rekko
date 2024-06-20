@@ -1,0 +1,19 @@
+.skeleton__wrapper {
+  margin: 90px auto 36px;
+  padding: 0 24px;
+  max-width: 280px;
+  aspect-ratio: 3/4;
+}
+
+.skeleton__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skeleton__heading h3 {
+  width: 100%;
+}
+
+.skeleton__text {
+  padding: 0 24px;
+}

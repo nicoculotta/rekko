@@ -1,0 +1,66 @@
+.checkbox__wrapper {
+  display: flex;
+  height: 56px;
+}
+.checkbox {
+  --border-color: #43495C; 
+  border: 1px solid var(--border-color);
+  font-weight: 700;
+  width: 100%;
+  padding: 14px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  background-color: var(--bg-dark-90);
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--bg-dark-90);
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
+  border-radius: 0.40em;
+  transform: translateY(0.2em);
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: relative;
+  top: 0;
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: var(--bg-dark-90);
+  transform-origin: center;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+  border-color: var(--primary-color);
+}
+
+input[type="checkbox"]:checked {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+}

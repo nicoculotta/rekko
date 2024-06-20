@@ -1,0 +1,42 @@
+@keyframes scrollRight {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-166.66px * 20))}
+}
+
+@keyframes scrollLeft {
+	0% { transform: translateX(calc(-166.66px * 20))}
+	100% { transform: translateX(0); }
+}
+
+.slider {
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 250px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+  max-width: 480px;
+  margin-bottom: 16px;
+}
+
+.slide__track {
+  display: flex;
+  width: calc(166.66px * 40);
+}
+
+.scroll-right {
+  animation: scrollRight 120s linear infinite;
+}
+
+.scroll-left {
+  animation: scrollLeft 120s linear infinite;
+}
+
+.slide {
+  width: 166.66px;
+  height: 250px;
+  padding-right: 8px;
+}
+
+img {
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+.heading {
+  font-family: 'Josefin Sans';
+  line-height: normal;
+  margin: 0 0 8px;
+}
+
+.heading-2 {
+  font-size: 28px;
+}
+
+.heading-3 {
+  font-size: 24px;
+}
+
+.heading-4 {
+  font-size: 20px;
+}

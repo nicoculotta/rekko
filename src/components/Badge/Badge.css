@@ -1,0 +1,10 @@
+.badge {
+  --border-color: #43495C; 
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: var(--bg-dark-90);
+  color: #ffffff;
+  border: 1px solid var(--border-color);
+  line-height: normal;
+}

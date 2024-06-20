@@ -1,0 +1,21 @@
+.notification__wrapper {
+  position: fixed;
+  bottom: 0px;
+  background-color: #14151c;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.notification {
+  padding: 36px 24px 120px;
+  width: 88%;
+}
+
+.icon__close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 24px;
+}

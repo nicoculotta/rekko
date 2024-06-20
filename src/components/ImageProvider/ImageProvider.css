@@ -1,0 +1,6 @@
+.image__provider {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  overflow: hidden;
+}
